@@ -1,24 +1,53 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nariah Taylor</title>
-  </head>
-  <body>
-    <!-- Front Cover -->
-    <div id="hero"></div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nariah Taylor</title>
 
-    <!-- Biography -->
-    <div id="bio"></div>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" id="font-css">
+</head>
+<body>
+  <!-- Hero -->
+  <section class="bg-nt-grey text-nt-white">
+    <div class="flex items-center justify-center h-screen">
+      
+      <!-- Relative so the absolute div inside is positioned relative to it -->
+      <div class="relative">
 
-    <!-- Discography -->
-    <div id="discog"></div>
+          <!-- Moody Headshot -->
+          <img src="/01.webp" alt="Nariah Taylor" class="block mx-auto opacity-60" />
+          
+          <!-- Grayscale filter-->
+          <div class="absolute inset-0 bg-nt-grey opacity-60"></div>
 
-    <!-- Footer -->
-    <div id="footer"></div>
-    
-    <script type="module" src="/main.js"></script>
-  </body>
+          <!-- Nariah / Taylor Title -->
+          <div class="absolute inset-0 flex items-center justify-center">
+              <div> <!-- This div separates the Nariah/Taylor lines -->
+                  <h2 class="text-[96px]">&nbsp;</h2>
+                  <h1 class="font-bonbold text-[256px] text-center leading-none">NARIAH</h1>
+                  <h2 class="font-bonscript text-[96px] text-center tracking-[1.5%]">Taylor</h2>
+              </div>
+          </div>
+
+      </div>
+
+      <!-- Singer/songwriter subtitle -->
+      <div class="absolute bottom-16">
+          <h3 class="font-bon text-lg">singer, songwriter, multi-instrumentalist</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Biography -->
+
+  <!-- Discography -->
+
+  <!-- Footer -->
+  
+  <script type="module" src="/main.js"></script>
+</body>
 </html>
